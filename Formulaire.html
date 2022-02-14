@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style_formulaire.css">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <br>
+        <p>
+            <ins>Prise de rendez-vous</ins>
+        </p>
+        <br>
+        <hr>
+        <br>
+        <fieldset style="width: 30vh;">
+          <legend> Vos coordonnées : </legend>
+              <input type="radio" name="CSS" value="Mme" id="Mme"
+              checked="checked" />
+              <label for="Mme" class="inline">Mme</label>
+              <input type="radio" name="CSS" value="Mr" id="Mr" />
+              <label for="Mr" class="inline">Mr</label>
+
+              <label for="name">Nom :</label>
+              <input type="text" name="name" id="name" />
+              <label for="firstname">Prénom :</label>
+              <input type="text" name="firstname" id="firstname" />
+              <label for="email">Votre email :</label>
+              <input type="email" name="email" size="20" 
+              maxlength="40" id="email" placeholder="votre@email.com" /> 
+         </fieldset>
+
+         <fieldset style="width: 30vh;">
+          <legend>Votre rendez-vous :</legend>
+            <label for="utilise">Sélectionner le type de rendez-vous : </label>
+            <select name="utilise" id="utilise">
+            <option value="Achat">Achat</option>
+            <option value="Entretien">Entretien</option>
+            <option value="Réparation">Réparation</option>
+            </select>
+
+            <label for="date">Date :</label>
+            <input type="date" name="date" value="date" />
+            <label for="heure">Heure :</label>
+            <input type="time" name="heure" />
+
+           <label for="comments">Vos commentaires :</label>
+            <textarea name="comments" id="comments" cols="20" rows="4">
+            </textarea>
+         </fieldset>
+         
+          <p>
+          <input type="submit" value="Envoyer" />
+          <input type="reset" value="Annuler" />
+          </p>
+    </body>
+</html>
